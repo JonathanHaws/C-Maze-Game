@@ -10,12 +10,12 @@ REM Check if the process 'main.exe' is running, then kill it
 for /f "tokens=2" %%a in ('tasklist /NH /FI "IMAGENAME eq main.exe"') do taskkill /F /PID %%a
 
 REM Remove the 'main.exe' file if it exists
-if exist main.exe ( 
-    del /F main.exe
+if exist maze.exe ( 
+    del /F maze.exe
 )
 
 REM Compile the 'main.cpp' source file using Clang++
-clang++ main.cpp -o main.exe
+clang++ maze.cpp -o maze.exe
 
 REM Start the 'main.exe' process
-start main.exe
+start maze.exe
