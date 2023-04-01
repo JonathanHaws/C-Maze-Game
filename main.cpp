@@ -127,10 +127,3 @@ int main() {
     }
     return 0;
 }
-
-/* Powershell command to conviently compile and run the program VS Code
-Get-Process -Name "main" | Stop-Process -Force
-Remove-Item "main.exe" 
-clang++ "main.cpp" -o "main.exe" 
-Start-Process "main.exe"
-*/
